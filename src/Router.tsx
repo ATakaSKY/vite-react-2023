@@ -6,6 +6,7 @@ import Page from 'components/Page';
 import PageLoading from 'components/PageLoading';
 
 const Home = lazy(() => import('pages/Home'));
+const Posts = lazy(() => import('pages/Posts'));
 const PageNotFound = lazy(() => import('pages/PageNotFound'));
 
 interface Routes {
@@ -23,6 +24,7 @@ const getRouteElement = (Component: React.ElementType): React.ReactNode => (
 
 const routes: Routes[] = [
    { path: paths.HOME, element: getRouteElement(Home) },
+   { path: paths.POSTS, element: getRouteElement(Posts) },
    { path: paths.NOT_FOUND, element: getRouteElement(PageNotFound) }
 ];
 
