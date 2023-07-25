@@ -1,10 +1,9 @@
 import { lazy, Suspense } from 'react';
 import { createBrowserRouter } from 'react-router-dom';
-
-import PageLoading from 'components/PageLoading';
-import Page from 'components/Page';
-
 import paths from 'paths';
+
+import Page from 'components/Page';
+import PageLoading from 'components/PageLoading';
 
 const Home = lazy(() => import('pages/Home'));
 const PageNotFound = lazy(() => import('pages/PageNotFound'));
@@ -24,7 +23,7 @@ const getRouteElement = (Component: React.ElementType): React.ReactNode => (
 
 const routes: Routes[] = [
    { path: paths.HOME, element: getRouteElement(Home) },
-   { path: paths.NOT_FOUND, element: getRouteElement(PageNotFound) },
+   { path: paths.NOT_FOUND, element: getRouteElement(PageNotFound) }
 ];
 
 export default createBrowserRouter(routes);
