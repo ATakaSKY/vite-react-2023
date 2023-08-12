@@ -11,3 +11,4 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - run: echo "Running tests"
+    name: test-runner
