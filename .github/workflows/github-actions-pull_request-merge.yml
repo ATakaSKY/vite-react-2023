@@ -9,9 +9,15 @@ on:
       - closed
 
 jobs:
-  if_merged:
+  merge_jobs:
     if: github.event.pull_request.merged
     runs-on: ubuntu-latest
     steps:
     - run: |
         echo The PR was merged
+  closed_jobs:
+    if: github.event.pull_request.merged === false
+    runs-on: ubuntu-latest
+    steps:
+    - run: |
+        echo The PR was closed
