@@ -1,1 +1,13 @@
+name: GitHub Actions when PR is opened
+run-name: ${{ github.actor }} running this 🚀
 
+on:
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  running_tests
+    runs-on: ubuntu-latest
+    steps:
+    - run: echo "Running tests"
