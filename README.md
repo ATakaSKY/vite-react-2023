@@ -27,3 +27,8 @@ If you are developing a production application, we recommend updating the config
 - Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
 
 ### For github actions, go to workflows under .github
+
+Three actions are added to the flow:
+- To run when PR is raised
+- To run when PR is closed/merged
+- To run when something is pushed to main
