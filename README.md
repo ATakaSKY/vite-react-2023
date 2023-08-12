@@ -26,7 +26,7 @@ If you are developing a production application, we recommend updating the config
 - Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
 - Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
 
-### For github actions, go to workflows under .github
+## For github actions, go to workflows under .github
 
 Three actions are added to the flow:
 - To run when PR is raised
