@@ -16,5 +16,5 @@ jobs:
       - name: Release with release-please
         uses: google-github-actions/release-please-action@v3
         with:
-          release-type: terraform-module
+          release-type: node
           default-branch: main
